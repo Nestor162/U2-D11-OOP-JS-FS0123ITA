@@ -4,33 +4,35 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Classi in JavaScript</title>
   </head>
   <body>
-    <form id="addPetForm" action="" method="get">
-      <div>
-        <label for="ownerName">Enter your name: </label>
-        <input type="text" name="ownerName" id="ownerName" required />
-      </div>
-      <div>
-        <label for="petName">Enter your pet's name: </label>
-        <input type="text" name="petName" id="petName" required />
-      </div>
-      <div>
-        <label for="species">Enter your pet's species: </label>
-        <input type="text" name="species" id="species" required />
-      </div>
-      <div>
-        <label for="breed">Enter your pet's breed: </label>
-        <input type="text" name="breed" id="breed" required />
-      </div>
-      <div>
-        <input type="submit" value="Add Pet!" />
-      </div>
-    </form>
-
-    <h2>Pet List</h2>
-    <ol></ol>
+    <main>
+      <form id="addPetForm" action="" method="get">
+        <div>
+          <label for="ownerName">Enter your name: </label>
+          <input type="text" name="ownerName" id="ownerName" required />
+        </div>
+        <div>
+          <label for="petName">Enter your pet's name: </label>
+          <input type="text" name="petName" id="petName" required />
+        </div>
+        <div>
+          <label for="species">Enter your pet's species: </label>
+          <input type="text" name="species" id="species" required />
+        </div>
+        <div>
+          <label for="breed">Enter your pet's breed: </label>
+          <input type="text" name="breed" id="breed" required />
+        </div>
+        <div class="button_wrapper">
+          <input type="submit" value="Add Pet!" />
+        </div>
+      </form>
+      <h2>Pet List</h2>
+      <ol></ol>
+    </main>
     <script src="script.js"></script>
   </body>
 </html>
