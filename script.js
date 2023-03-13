@@ -29,9 +29,7 @@ class Pet {
   }
 
   static sameOwner(pet1, pet2) {
-    return pet1.ownerName === pet2.ownerName
-      ? "The two pets have the same owner"
-      : "The two pets have different ownners";
+    return Boolean(pet1.ownerName === pet2.ownerName);
   }
 }
 
@@ -62,9 +60,11 @@ petForm.addEventListener("submit", event => {
   list.innerHTML = "";
 
   for (pet of petsArray) {
-    console.log(pet);
     let listItem = document.createElement("li");
     listItem.innerHTML = `<strong> Owner: </strong> ${pet.ownerName}, <strong> Pet:</strong> ${pet.petName}, <strong>Species:</strong> ${pet.species}, <strong>Breed:</strong> ${pet.breed}`;
     list.appendChild(listItem);
   }
+
+  // verifica funzionamento funzione sameOwner. Paragonando i primi due elementi del array
+  console.log(Pet.sameOwner(petsArray[0], petsArray[1]));
 });
