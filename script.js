@@ -56,7 +56,7 @@ petForm.addEventListener("submit", event => {
   document.getElementById("breed").value = "";
 
   // Viene creato una nuova istanza della classe pet
-  petsArray.push(new Pet(FormOwnerName, FormPetName, FormSpecies, FormBreed));
+  petsArray.push(new Pet(FormPetName, FormOwnerName, FormSpecies, FormBreed));
 
   let list = document.querySelector("ol");
   list.innerHTML = "";
