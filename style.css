@@ -1,6 +1,9 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url("img/bg.png");
+  object-fit: cover;
 }
 
 main {
@@ -9,15 +12,31 @@ main {
   justify-content: center;
   align-items: center;
   line-height: 30px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  height: 100vh;
-  background-image: url("img/bg.png");
-  object-fit: cover;
+  margin-top: 50px;
 }
 
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 30px;
+}
+
+li {
+  font-size: 1.2rem;
+}
 .button_wrapper {
   display: flex;
   margin-top: 20px;
+}
+
+label {
+  font-size: 1.3rem;
+}
+
+h2 {
+  margin-top: 35px;
 }
 
 input[value="Add Pet!"] {
@@ -29,4 +48,13 @@ input[value="Add Pet!"] {
   color: white;
   background: linear-gradient(to right, #fd746c, #ff9068);
   box-shadow: 2px 5px 8px -1px rgba(0, 0, 0, 0.56);
+}
+
+#addPetForm input[type="text"] {
+  border: 2px solid #ffa6a1;
+  background-color: #edc5b7;
+  border-radius: 3px;
+  padding: 5px;
+  width: 100%;
+  margin-bottom: 15px;
 }
